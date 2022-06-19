@@ -59,7 +59,7 @@ body {
   justify-content: start;
   align-items: center;
   text-align: left;
-  padding-left: 20vw;
+  padding: 0 10vw;
 }
 
 .center {
@@ -83,7 +83,7 @@ body {
   right: -6px;
   width: 4px;
   height: 100%;
-  min-height: 80px;
+  max-height: 80px;
   background: #535353;
   top: 50%;
   transform: translateY(-50%);
@@ -111,7 +111,7 @@ body {
   font-weight: bold;
   grid-row-start: 1;
   grid-column-start: 1;
-  font-size: 5rem;
+  font-size: min(max(.5rem,4vw),5rem);
   --stack-height: calc(100% / var(--stacks) - 1px);
   --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
   --clip-top: calc(var(--stack-height) * var(--index));
